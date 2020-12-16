@@ -11,7 +11,6 @@ namespace OOP
         private readonly string _nome;
         private readonly int _voltagem;
 
-
         protected Eletrodomestico(string nome, int voltagem)
         {
             _nome = nome;
@@ -24,8 +23,16 @@ namespace OOP
         /// </summary>
         public abstract void Ligar();
 
-
         public abstract void Desligar();
+
+
+        /// <summary>
+        /// Virtual não obriga implementação mas pode ser herdado e modificado.
+        /// </summary>
+        public virtual void Testar()
+        {
+            // teste do equipamento
+        }
     }
 
     public abstract class Shape
