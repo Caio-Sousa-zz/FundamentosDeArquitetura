@@ -25,10 +25,6 @@ namespace OOP
 
         }
 
-        private static void AquecerAGua() { }
-
-        private static void MoerGraos() { }
-
         public void PrepararCafe()
         {
             AquecerAGua();
@@ -53,5 +49,10 @@ namespace OOP
         {
 
         }
+
+        private static void AquecerAGua() { }
+
+        private static void MoerGraos() { }
+
     }
 }
