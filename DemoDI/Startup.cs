@@ -40,6 +40,7 @@ namespace DemoDI
 
             #region Generics
 
+            // Type of para resolver em tempo de execução
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             #endregion

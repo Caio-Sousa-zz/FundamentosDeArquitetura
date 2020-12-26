@@ -5,10 +5,8 @@ namespace DemoDI.Cases
     public class OperacaoService
     {
         public OperacaoService(
-            IOperacaoTransient transient,
-            IOperacaoScoped scoped,
-            IOperacaoSingleton singleton,
-            IOperacaoSingletonInstance singletonInstance)
+                                IOperacaoTransient transient, IOperacaoScoped scoped,
+                                IOperacaoSingleton singleton, IOperacaoSingletonInstance singletonInstance)
         {
             Transient = transient;
             Scoped = scoped;
@@ -22,10 +20,8 @@ namespace DemoDI.Cases
         public IOperacaoSingletonInstance SingletonInstance { get; }
     }
 
-    public class Operacao : IOperacaoTransient,
-        IOperacaoScoped,
-        IOperacaoSingleton,
-        IOperacaoSingletonInstance
+    public class Operacao : IOperacaoTransient, IOperacaoScoped,
+                            IOperacaoSingleton, IOperacaoSingletonInstance
     {
         public Operacao() : this(Guid.NewGuid())
         {
