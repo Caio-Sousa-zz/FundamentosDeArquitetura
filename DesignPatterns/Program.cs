@@ -46,12 +46,12 @@ namespace DesignPatterns
                 case '3':
                     ExecucaoSingleton.Executar();
                     break;
-                    //case '4':
-                    //    ExecucaoAdapter.Executar();
-                    //    break;
-                    //case '5':
-                    //    ExecucaoFacade.Executar();
-                    //    break;
+                case '4':
+                    ExecucaoAdapter.Executar();
+                    break;
+                case '5':
+                    ExecucaoFacade.Executar();
+                    break;
                     //case '6':
                     //    ExecucaoComposite.Executar();
                     //    break;
